@@ -2,6 +2,9 @@ describe('stream test', () => {
     
     it('abre a página inicial', () => {
         browser.url('http://localhost:3000/')
+        browser.pause(1000);
+        browser.newWindow("http://localhost:3000/");
+        browser.pause(2000);
     })
 
     // it('demonstrate the alertText command', function () {
