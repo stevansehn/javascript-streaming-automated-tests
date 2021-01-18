@@ -13,7 +13,13 @@ describe('stream test', () => {
     // // ...
     // });
 
-    it('should save a screenshot of the browser view', function () {
-        browser.saveScreenshot('./screenshot.png');
-    })
+    // it('should save a screenshot of the browser view', function () {
+    //     browser.saveScreenshot('./screenshot.png');
+    // })
+
+    let res
+    res = await request(app).get(`/rooms`).send()
+    console.log(res.statusCode)
+    expect(res.statusCode).toBe(200)
+    done()
 })
