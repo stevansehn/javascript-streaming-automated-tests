@@ -24,6 +24,16 @@
     "@wdio/spec-reporter": "^6.11.0",
     "@wdio/sync": "^6.11.0",
     "chromedriver": "^87.0.5",
-    "wdio-chromedriver-service": "^6.0.4"
+    "supertest": "^6.1.1",
+    "wdio-chromedriver-service": "^6.0.4",
+    "express": "^4.17.1",
+    "node-static": "^0.7.11",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "socketio": "^1.0.0",
+    "swagger": "^0.7.5",
+    "swagger-ui": "^3.36.0",
+    "swagger-ui-express": "^4.1.4",
+    "ui": "^0.2.4"
   }
 }
