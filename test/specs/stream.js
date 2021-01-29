@@ -24,14 +24,13 @@ describe('stream test', () => {
         browser.url(`${baseUrl}`)
         browser.newWindow(`${baseUrl}`);
         // browser.navigateTo(`${baseUrl}/rooms`)
+        browser.navigateTo(`${baseUrl}/rooms/${roomId}/stats`)
         
-        // res = request(app).get(`/rooms/${roomId}/stats`)
-        // res = request(app).get(`/`)
-        // expect(res.statusCode).toBe(200)
-        // expect(res.body).toBeDefined()
-        // console.log(res)
-        
-        browser.saveScreenshot('./screenshot.png');
+        const paragraph = $('body')
+        console.log(paragraph.getText())
+        [{"roomId":"teste","numOfPeers":2}]
+
+        browser.saveScreenshot('screenshots/screenshot.png');
         browser.closeWindow()
         browser.deleteSession()
 
