@@ -35,5 +35,8 @@
     "swagger-ui": "^3.36.0",
     "swagger-ui-express": "^4.1.4",
     "ui": "^0.2.4"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
